@@ -1,0 +1,2 @@
+# Typescritp
+Typescript
