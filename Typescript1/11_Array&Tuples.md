@@ -127,4 +127,36 @@ console.log(person[1]); // ✅
 
 ---
 
+In TypeScript, you have a few common ways to create an array that can store **both strings and numbers**.
+
+### 1. Using a union type (most common)
+
+```ts
+const mixedArray: (string | number)[] = [];
+
+mixedArray.push("hello");
+mixedArray.push(42);
+```
+
+### 2. Inline type annotation
+
+```ts
+let mixedArray: Array<string | number> = ["text", 10, "more", 99];
+```
+
+### 3. As a readonly array (if you don’t want it modified)
+
+```ts
+const mixedArray: readonly (string | number)[] = ["a", 1, "b", 2];
+```
+
+### 4. Tuple (if order/length is fixed)
+
+```ts
+const mixedTuple: [string, number] = ["age", 30];
+```
+
+👉 **Recommendation:**
+If the array can grow and the order isn’t fixed, use **`(string | number)[]`**.
+
 
