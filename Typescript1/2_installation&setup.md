@@ -57,3 +57,6 @@ This command:
 ---
 
 This setup allows developers to write TypeScript code and run it as JavaScript smoothly and efficiently.
+
+
+Note :- npx is important to use for running tsc compiler if you have installed typescript as dev dependency.
